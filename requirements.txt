@@ -1,0 +1,2 @@
+-r assets/requirements/runtime.txt
+-r assets/requirements/tests.txt
