@@ -34,7 +34,7 @@ class MLP(nn.Module):
 @HEADS.register_module()
 class BRENetHead(BaseDecodeHead):
     """
-    SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers
+    BRENet: Rethinking RGB-Event Semantic Segmentation with a Novel Bidirectional Motion-enhanced Event Representation
     """
     def __init__(self, feature_strides, scale_resolution, **kwargs):
         super(BRENetHead, self).__init__(input_transform='multiple_select', **kwargs)
