@@ -1,8 +1,3 @@
-# ---------------------------------------------------------------
-# Copyright (c) 2021, NVIDIA Corporation. All rights reserved.
-#
-# This work is licensed under the NVIDIA Source Code License
-# ---------------------------------------------------------------
 import torch.nn as nn
 import torch
 from mmcv.cnn import ConvModule

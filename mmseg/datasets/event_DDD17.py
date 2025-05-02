@@ -22,30 +22,28 @@ class EventDDD17Dataset(Dataset):
     """Custom dataset for semantic segmentation. An example of file structure
     is as followed.
 
-    .. code-block:: none
-
-        ├── data
-        │   ├── my_dataset
-        │   │   ├── img_dir
-        │   │   │   ├── train
-        │   │   │   │   ├── xxx{img_suffix}
-        │   │   │   │   ├── yyy{img_suffix}
-        │   │   │   │   ├── zzz{img_suffix}
-        │   │   │   ├── val
-        │   │   ├── ann_dir
-        │   │   │   ├── train
-        │   │   │   │   ├── xxx{seg_map_suffix}
-        │   │   │   │   ├── yyy{seg_map_suffix}
-        │   │   │   │   ├── zzz{seg_map_suffix}
-        │   │   │   ├── val
-
-    The img/gt_semantic_seg pair of CustomDataset should be of the same
-    except suffix. A valid img/gt_semantic_seg filename pair should be like
-    ``xxx{img_suffix}`` and ``xxx{seg_map_suffix}`` (extension is also included
-    in the suffix). If split is given, then ``xxx`` is specified in txt file.
-    Otherwise, all files in ``img_dir/``and ``ann_dir`` will be loaded.
-    Please refer to ``docs/tutorials/new_dataset.md`` for more details.
-
+    ./BRENet                                # current (project) directory
+    └── data                                # various datasets
+        └── DDD17
+            ├── train
+            │   ├── dir 0                   # various sequences
+            │   │   ├── image               # images
+            │   │   |   ├── 00000000.png
+            │   │   |   └── ...
+            │   │   ├── index               # event timestamp data
+            │   │   |   ├── index_10ms.npy
+            │   │   |   └── ...
+            │   │   ├── segmentation_masks  # segmentation labels
+            │   │   |   ├── 00000000.png
+            │   │   |   └── ...
+            │   │   ├── events.dat.t        # event data
+            │   │   └── events.dat.xyp      # event data
+            │   ├── dir 3
+            │   ├── dir 4
+            │   ├── dir 6
+            │   └── dir 7
+            └── test
+                └── dir 1
 
     Args:
         pipeline (list[dict]): Processing pipeline

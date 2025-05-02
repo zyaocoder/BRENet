@@ -22,31 +22,39 @@ class EventDSECDataset(Dataset):
     """Custom dataset for semantic segmentation. An example of file structure
     is as followed.
 
-    .. code-block:: none
-
-        ├── data
-        │   ├── my_dataset
-        │   │   ├── img_dir
-        │   │   │   ├── train
-        │   │   │   │   ├── xxx{img_suffix}
-        │   │   │   │   ├── yyy{img_suffix}
-        │   │   │   │   ├── zzz{img_suffix}
-        │   │   │   ├── val
-        │   │   ├── ann_dir
-        │   │   │   ├── train
-        │   │   │   │   ├── xxx{seg_map_suffix}
-        │   │   │   │   ├── yyy{seg_map_suffix}
-        │   │   │   │   ├── zzz{seg_map_suffix}
-        │   │   │   ├── val
-
-    The img/gt_semantic_seg pair of CustomDataset should be of the same
-    except suffix. A valid img/gt_semantic_seg filename pair should be like
-    ``xxx{img_suffix}`` and ``xxx{seg_map_suffix}`` (extension is also included
-    in the suffix). If split is given, then ``xxx`` is specified in txt file.
-    Otherwise, all files in ``img_dir/``and ``ann_dir`` will be loaded.
-    Please refer to ``docs/tutorials/new_dataset.md`` for more details.
-
-
+    ./BRENet                                 # current (project) directory
+    └── data                                 # various datasets
+      └── DSEC
+          ├── train               
+          │   ├── zurich_city_00_a           # various sequencese
+          │   │   ├── 11classes              # segmentation labels
+          │   │   │   ├── 000000.png
+          │   │   │   └── ...
+          │   │   ├── 19classes
+          │   │   │   ├── 000000.png
+          │   │   │   └── ...
+          │   │   ├── events                 # event data
+          │   │   |   └── left
+          │   │   |       ├── events.h5
+          │   │   |       └── rectify_map.h5
+          │   │   └── images                 # images
+          │   │       ├── left
+          │   │       |   └── ev_inf
+          │   │       |       ├── 000000.png
+          │   │       |       └── ...
+          │   │       └── timestamps.txt     # event timestamp data
+          │   ├── zurich_city_01_a
+          │   ├── zurich_city_02_a
+          │   ├── zurich_city_04_a
+          │   ├── zurich_city_05_a
+          │   ├── zurich_city_06_a
+          │   ├── zurich_city_07_a
+          │   └── zurich_city_08_a
+          └── test
+              ├── zurich_city_13_a
+              ├── zurich_city_14_a
+              └── zurich_city_15_a
+              
     Args:
         pipeline (list[dict]): Processing pipeline
         img_dir (str): Path to image directory
