@@ -1,5 +1,4 @@
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/rethinking-rgb-event-semantic-segmentation/semantic-segmentation-on-dsec)](https://paperswithcode.com/sota/semantic-segmentation-on-dsec?p=rethinking-rgb-event-semantic-segmentation)
-
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/rethinking-rgb-event-semantic-segmentation/semantic-segmentation-on-dsec)](https://paperswithcode.com/sota/semantic-segmentation-on-dsec?p=rethinking-rgb-event-semantic-segmentation)<br>
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/rethinking-rgb-event-semantic-segmentation/semantic-segmentation-on-ddd17)](https://paperswithcode.com/sota/semantic-segmentation-on-ddd17?p=rethinking-rgb-event-semantic-segmentation)
 
 # Rethinking RGB-Event Semantic Segmentation with a Novel Bidirectional Motion-enhanced Event Representation
