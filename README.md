@@ -69,8 +69,14 @@ This repository is under the Apache-2.0 license. For commercial use, please cont
 This codebase is built based on [MMSegmentation](https://github.com/open-mmlab/mmsegmentation/tree/main). We thank MMSegmentation for their great contributions.
 
 ## Citation
-Please cite our paper and other related works if you find this useful:
+Please cite our BRENet paper and other related works if you find this useful:)
 ```
+@article{yao2025rethinking,
+  title={Rethinking RGB-Event Semantic Segmentation with a Novel Bidirectional Motion-enhanced Event Representation},
+  author={Yao, Zhen and Ying, Xiaowen and Chuah, Mooi Choo},
+  journal={arXiv preprint arXiv:2505.01548},
+  year={2025}
+}
 ```
 
 EVSNet: Event-guided low-light video semantic segmentation
