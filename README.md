@@ -1,9 +1,11 @@
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/rethinking-rgb-event-semantic-segmentation/semantic-segmentation-on-dsec)](https://paperswithcode.com/sota/semantic-segmentation-on-dsec?p=rethinking-rgb-event-semantic-segmentation)<br>
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/rethinking-rgb-event-semantic-segmentation/semantic-segmentation-on-ddd17)](https://paperswithcode.com/sota/semantic-segmentation-on-ddd17?p=rethinking-rgb-event-semantic-segmentation)
 
 # Rethinking RGB-Event Semantic Segmentation with a Novel Bidirectional Motion-enhanced Event Representation
 
 [Zhen Yao](https://zyaocoder.github.io/), [Xiaowen Ying](https://www.xiaowenying.com/), [Mooi Choo Chuah](https://www.cse.lehigh.edu/~chuah/).<br>
 
-### [Paper]() | [Project page](https://github.com/AnonymousCVCoder/BRENet)
+### [arXiv](https://arxiv.org/abs/2505.01548) | [Paper]() | [Project page](https://github.com/zyaocoder/BRENet)
 
 This repository contains the official Pytorch implementation of training & evaluation code and the pretrained models for BRENet.
 
@@ -64,7 +66,7 @@ python tools/train.py local_configs/BRENet/brenet.b2.346x200.ddd17.160k.py
 This repository is under the Apache-2.0 license. For commercial use, please contact with the authors.
 
 ## Acknowledgement
-This codebase is built based on MMSegmentation. We thank MMSegmentation for their great contributions.
+This codebase is built based on [MMSegmentation](https://github.com/open-mmlab/mmsegmentation/tree/main). We thank MMSegmentation for their great contributions.
 
 ## Citation
 Please cite our paper and other related works if you find this useful:
@@ -73,10 +75,12 @@ Please cite our paper and other related works if you find this useful:
 
 EVSNet: Event-guided low-light video semantic segmentation
 ```
-@article{yao2024event,
+@inproceedings{yao2025event,
   title={Event-guided low-light video semantic segmentation},
   author={Yao, Zhen and Chuah, Mooi Choo},
-  journal={arXiv preprint arXiv:2411.00639},
-  year={2024}
+  booktitle={2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  pages={3330--3341},
+  year={2025},
+  organization={IEEE}
 }
 ```
