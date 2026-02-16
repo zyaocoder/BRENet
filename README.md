@@ -1,11 +1,11 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/rethinking-rgb-event-semantic-segmentation/semantic-segmentation-on-dsec)](https://paperswithcode.com/sota/semantic-segmentation-on-dsec?p=rethinking-rgb-event-semantic-segmentation)<br>
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/rethinking-rgb-event-semantic-segmentation/semantic-segmentation-on-ddd17)](https://paperswithcode.com/sota/semantic-segmentation-on-ddd17?p=rethinking-rgb-event-semantic-segmentation)
 
-# Rethinking RGB-Event Semantic Segmentation with a Novel Bidirectional Motion-enhanced Event Representation
+# Learning Flow-Guided Registration for RGB-Event Semantic Segmentation
 
-[Zhen Yao](https://zyaocoder.github.io/), [Xiaowen Ying](https://www.xiaowenying.com/), [Mooi Choo Chuah](https://www.cse.lehigh.edu/~chuah/).<br>
+[Zhen Yao](https://zyaocoder.github.io/), [Xiaowen Ying](https://www.xiaowenying.com/), [Zhiyu Zhu](https://zhu-zhiyu.github.io/Personal/), [Mooi Choo Chuah](https://www.cse.lehigh.edu/~chuah/).<br>
 
-### [ArXiv](https://arxiv.org/abs/2505.01548) | [Paper]() | [Project page](https://github.com/AnonymousCVCoder/BRENet)
+### [arXiv](https://arxiv.org/abs/2505.01548) | [Paper]() | [Project page](https://github.com/AnonymousCVCoder/BRENet)
 
 This repository contains the official Pytorch implementation of training & evaluation code and the pretrained models for BRENet.
 
@@ -38,8 +38,8 @@ We provide trained weights for our models reported in the paper. All of the mode
 
 |Dataset|Backbone|Resolution|mIoU|Accuracy|Download Link|
 |:-:|:-:|:-:|:-:|:-:|:-:|
-|DDD17|MiT-B2|200*346|78.56|96.61|[[Google Drive](https://drive.google.com/file/d/1IWC01V6o6Excduw1CzQ_UQPSMTKOSFf6/view?usp=drive_link)] / [[OneDrive](https://1drv.ms/u/s!Ai-2eP0j16e5bGTezxL8hg6SZ0I?e=8iF2Xr)]|
-|DSEC|MiT-B2|440*640|74.94|95.85|[[Google Drive](https://drive.google.com/file/d/1LYxaQmMmawh8552FxBeVJA5kgLbjcJtj/view?usp=drive_link)] / [[OneDrive](https://1drv.ms/u/s!Ai-2eP0j16e5bQVF_I9yf8LqrtM?e=tYhFm0)]|
+|DDD17|MiT-B2|200*346|78.56|96.61|[[Huggingface](https://huggingface.co/Chrisathy/BRENet/blob/main/BRENet_DDD17_best.pth)] |
+|DSEC|MiT-B2|440*640|74.94|95.85|[[Huggingface](https://huggingface.co/Chrisathy/BRENet/blob/main/BRENet_DSEC_best.pth)] |
 
 ## Evaluation
 ```
@@ -49,7 +49,7 @@ python tools/test.py local_configs/BRENet/brenet.b2.346x200.ddd17.160k.py /path/
 ```
 
 ## Training
-Download `backbone weights` of [MiT-B2](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/xieenze_connect_hku_hk/EvOn3l1WyM5JpnMQFSEO5b8B7vrHw9kDaJGII-3N9KNhrg?e=cpydzZ) pretrained on ImageNet-1K, and put it in the folder ```pretrained/```.
+Download `backbone weights` of [MiT-B2](https://huggingface.co/Chrisathy/BRENet/blob/main/mit_b2.pth) pretrained on ImageNet-1K, and put it in the folder ```pretrained/```.
 Download FlowNet weights: `Checkpoint trained on DSEC` of [eRaft](https://github.com/uzh-rpg/E-RAFT/tree/main) in and put it in the folder ```pretrained/```.
 
 ```
@@ -71,9 +71,9 @@ This codebase is built based on [MMSegmentation](https://github.com/open-mmlab/m
 ## Citation
 Please cite our BRENet paper and other related works if you find this useful:)
 ```
-@article{yao2025rethinking,
-  title={Rethinking RGB-Event Semantic Segmentation with a Novel Bidirectional Motion-enhanced Event Representation},
-  author={Yao, Zhen and Ying, Xiaowen and Chuah, Mooi Choo},
+@article{yao2025learning,
+  title={Learning Flow-Guided Registration for RGB-Event Semantic Segmentation},
+  author={Yao, Zhen and Ying, Xiaowen and Zhu, Zhiyu and Chuah, Mooi Choo},
   journal={arXiv preprint arXiv:2505.01548},
   year={2025}
 }
