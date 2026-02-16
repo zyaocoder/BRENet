@@ -72,4 +72,4 @@ The DSEC dataset can be downloaded [here](https://dsec.ifi.uzh.ch/dsec-datasets/
               └── zurich_city_15_a
 
 ### Processed dataset
-We also provide the processed and easy-to-use versions of the two datasets which you can use use after directly unzipping the file: [DDD17](https://drive.google.com/file/d/1AmIe4-dQ-BBuR4L33BW_wSJoII8p2zsj/view?usp=drive_link) and [DSEC](https://drive.google.com/file/d/1YgJqobRUhtKbMSCIhafl0GOTfQ1YUNz_/view?usp=drive_link). 
+We also provide the processed and easy-to-use versions of the two datasets which you can use use after directly unzipping the files: [DDD17 and DSEC](https://huggingface.co/datasets/Chrisathy/BRENet-dataset/tree/main).
