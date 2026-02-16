@@ -5,7 +5,7 @@
 
 [Zhen Yao](https://zyaocoder.github.io/), [Xiaowen Ying](https://www.xiaowenying.com/), [Zhiyu Zhu](https://zhu-zhiyu.github.io/Personal/), [Mooi Choo Chuah](https://www.cse.lehigh.edu/~chuah/).<br>
 
-### [arXiv](https://arxiv.org/abs/2505.01548) | [Paper]() | [Project page](https://github.com/AnonymousCVCoder/BRENet)
+### [arXiv](https://arxiv.org/abs/2505.01548) | [Paper]() | [Project page](https://github.com/zyaocoder/BRENet)
 
 This repository contains the official Pytorch implementation of training & evaluation code and the pretrained models for BRENet.
 
