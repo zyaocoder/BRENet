@@ -1,7 +1,4 @@
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/rethinking-rgb-event-semantic-segmentation/semantic-segmentation-on-dsec)](https://paperswithcode.com/sota/semantic-segmentation-on-dsec?p=rethinking-rgb-event-semantic-segmentation)<br>
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/rethinking-rgb-event-semantic-segmentation/semantic-segmentation-on-ddd17)](https://paperswithcode.com/sota/semantic-segmentation-on-ddd17?p=rethinking-rgb-event-semantic-segmentation)
-
-# Learning Flow-Guided Registration for RGB-Event Semantic Segmentation
+# [IEEE TIP 2026] Learning Flow-Guided Registration for RGB-Event Semantic Segmentation
 
 [Zhen Yao](https://zyaocoder.github.io/), [Xiaowen Ying](https://www.xiaowenying.com/), [Zhiyu Zhu](https://zhu-zhiyu.github.io/Personal/), [Mooi Choo Chuah](https://www.cse.lehigh.edu/~chuah/).<br>
 
